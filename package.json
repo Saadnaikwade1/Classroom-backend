@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"
-   
   },
   "keywords": [],
   "author": "",
@@ -22,7 +21,7 @@
     "@neondatabase/serverless": "^1.0.2",
     "apminsight": "^5.2.1",
     "better-auth": "^1.4.10",
-    "cors": "^2.8.5",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.1",
     "drizzle-orm": "^0.45.1",
     "express": "^5.2.1"
