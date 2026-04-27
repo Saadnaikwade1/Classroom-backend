@@ -8,6 +8,13 @@
       "when": 1775461906172,
       "tag": "0000_lean_bug",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1777282696027,
+      "tag": "0001_goofy_cassandra_nova",
+      "breakpoints": true
     }
   ]
 }
