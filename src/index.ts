@@ -1,13 +1,14 @@
 import express, { Request, Response } from "express";
 import subjectRouter from "./routes/subjects";
 import cors from "cors";
+import securityMiddleware from "./middleware/security";
 
 const app = express();
 const PORT = 8000;
 
 
-// Middleware
-app.use(express.json());
+
+
 
 app.use(cors({
   origin:process.env.FRONTEND_URL,
@@ -15,6 +16,11 @@ app.use(cors({
   credentials:true
 
 }))
+
+// Middleware
+app.use(express.json());
+
+app.use(securityMiddleware);
 
 app.use('/api/subjects',subjectRouter)
 // Root route
