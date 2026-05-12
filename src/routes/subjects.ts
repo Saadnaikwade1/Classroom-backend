@@ -3,10 +3,10 @@ import express  from "express";
 import { departments, subjects } from "../db/schema/index.js";
 import { db } from "../db/index.js";
 
-const rt= express.Router();
+const subjectRouter= express.Router();
 
 //get all the subjects with optional search, filtering and pagination
-rt.get("/",async(req,res)=>{
+subjectRouter.get("/",async(req,res)=>{
 try{
     const {search, department, page=1, limit=10}=req.query;
     const currentPage=Math.max(1,+page);
@@ -70,4 +70,4 @@ try{
 
 
 
-export default rt
+export default subjectRouter;
